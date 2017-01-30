@@ -1,3 +1,5 @@
+Powered by Ricardo Cezar Volert - 2017
+
 # Simple-CRUD-in-PHP
 Simple CRUD in PHP (Without PDO / Using MySQL Connection)
 
