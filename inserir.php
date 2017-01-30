@@ -19,13 +19,26 @@ $query = "INSERT INTO `aluno` (`nome`, `email`, `data_cadastro`) VALUES ('".$nom
 
 // Executa a query
 $inserir = mysql_query($query);
+
+    ?>
+    
+    
+    <html>
+  <head>
+     <meta http-equiv="refresh" content="1; url=http://digitiba.com/sistemas/CRUD/visualizar.php">
+    </head>
+  <body>
+    
+    
+    <?php  
+  
 if ($inserir) {
-	echo "Aluno inserido com sucesso!";
-	} else {
-		echo "Não foi possível inserir o aluno, tente novamente.";
-		// Exibe dados sobre o erro:
-		echo "Dados sobre o erro:" . mysql_error();
-	}
+  echo "Aluno inserido com sucesso!";
+  } else {
+    echo "Não foi possível inserir o aluno, tente novamente.";
+    // Exibe dados sobre o erro:
+    echo "Dados sobre o erro:" . mysql_error();
+  }
 
 
 ?>

@@ -17,12 +17,22 @@ $query = "UPDATE `aluno` SET `nome` = '".$nomeAtualizado."', `data_cadastro` = '
 
 // Executa a query
 $atualiza = mysql_query($query);
-
-	if ($atualiza) {
-		echo "O aluno foi atualizada com sucesso!";
-	} else {
-		echo "Não foi possível atualizar o aluno, tente novamente.";
-		// Exibe dados sobre o erro:
-		echo "Dados sobre o erro:" . mysql_error();
-	}
+?>
+    
+    
+    <html>
+  <head>
+     <meta http-equiv="refresh" content="1; url=http://digitiba.com/sistemas/CRUD/visualizar.php">
+    </head>
+  <body>
+    
+    
+    <?php
+  if ($atualiza) {
+    echo "O aluno foi atualizada com sucesso!";
+  } else {
+    echo "Não foi possível atualizar o aluno, tente novamente.";
+    // Exibe dados sobre o erro:
+    echo "Dados sobre o erro:" . mysql_error();
+  }
 ?>
